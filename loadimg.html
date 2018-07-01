@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loadimg</title>
+</head>
+<body>
+<div class="img" style="display: none">111111</div>
+<script src="https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1521774544964/jq3.3.1.js"></script>
+<script>
+    let img_data = [
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529915401406/7051529914715_.pic.jpg',
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529907162748/go_share.png",
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529896225788/result.jpg',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529895907983/result_list.png',
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/0_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/5000_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/3000_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/2000_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/1000_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529893729843/500_1.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/0.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/500.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/1000.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/2000.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/3000.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529637003717/5000.png",
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529909551923/p1.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528438975320/p2.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528438975320/p3.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528444771184/list_activity.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528444771184/list_bg.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528697839498/success.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528697839498/error.png',
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528713477676/error.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528713477676/success.png",
+        "https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528790940046/p4.png",
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1529906245889/p5.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528958546351/dazhuanpan.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528960375006/arrow.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528961968025/drow_count_0.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528961968025/drow_count_1.png',
+        'https://ks3-cn-beijing.ksyun.com/static.toptest.yidianzixun.com/public/file/1528961968025/drow_count_2.png',
+    ];
+    function loadImg(imgArr, callBack) {
+        var arr = [];
+        for(var i = 0; i< imgArr.length; i++) {
+            arr[i] = new Image();
+            arr[i].onload = function () {
+                $('.img').show();
+            }
+            arr[i].src = imgArr[i];
+        }
+    }
+    loadImg(img_data);
+</script>
+</body>
+</html>
